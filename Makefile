@@ -23,7 +23,7 @@ geometry.o: geometry.c geometry.h
 	$(CC) $(CFLAGS) $< -o $@
 
 dep:
-	brew install check
+	sudo apt-get -y update && sudo apt-get -y install check
 
 test: geometry_test
 	./geometry_test
