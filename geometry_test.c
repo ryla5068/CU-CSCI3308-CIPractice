@@ -110,8 +110,6 @@ START_TEST(test_2d_midpoint)
     a.y = 0;
     b.x = 3;
     b.y = 0;
-    coord_2d_midpoint(&mid, &a, &b);
-    exp.x = 1.5;
     exp.y = 0;
     ck_assert(coord_2d_eq(&mid, &exp));
 
@@ -145,6 +143,13 @@ START_TEST(test_2d_midpoint)
 }
 END_TEST
 
+
+START_TEST(test_2d_area_triangle)
+{
+  
+}
+END_TEST
+
 /* coord_2d Test Suite */
 Suite* coord_2d_suite(void)
 {
@@ -171,6 +176,7 @@ Suite* coord_2d_suite(void)
     return s;
 
 }
+
 
 /* main: run test suites and set exit status */
 int main(void){

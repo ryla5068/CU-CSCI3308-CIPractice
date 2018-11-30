@@ -1,0 +1,4 @@
+os: linux
+script: make clean && make test
+sudo: required
+install: make dep
